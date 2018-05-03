@@ -22,12 +22,12 @@ class MainActivity : AppCompatActivity() {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe { data ->
-                    textView.text = data.data().toString()
+                    textView1.text = data.data().toString()
                 }
     }
 
-    fun apolloQuery(): ApolloQueryCall<GetLocationQuery.Data> {
+    fun apolloQuery(): ApolloQueryCall<AbacateQuery.Data> {
         return apolloClient
-                .query(GetLocationQuery("189.59.228.170"))
+                .query(AbacateQuery("189.59.228.170"))
     }
 }

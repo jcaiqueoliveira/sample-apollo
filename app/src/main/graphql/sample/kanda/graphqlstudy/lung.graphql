@@ -1,0 +1,13 @@
+query Lung($ip: String!) {
+    getLocation(ip : $ip){
+    country {
+      names {
+        en
+      }
+    }
+     location {
+        latitude
+        longitude
+     }
+}
+}

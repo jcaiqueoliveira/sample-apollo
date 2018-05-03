@@ -1,0 +1,9 @@
+query Abacate($ip: String!) {
+    getLocation(ip : $ip){
+    country {
+      names {
+        en fr ru
+      }
+    }
+}
+}
