@@ -2,12 +2,12 @@ package sample.kanda.graphqlstudy
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.ApolloQueryCall
 import com.apollographql.apollo.rx2.Rx2Apollo
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var apolloClient: ApolloClient
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe { data ->
-                    textView1.text = data.data().toString()
+                    Log.e("a", data.data().toString())
                 }
     }
 
