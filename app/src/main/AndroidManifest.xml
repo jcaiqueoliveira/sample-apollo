@@ -3,7 +3,7 @@
     package="sample.kanda.graphqlstudy">
 
     <application
-        android:name=".SampleApplication"
+        android:name="sample.kanda.SampleApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

@@ -1,4 +1,4 @@
-package sample.kanda.graphqlstudy
+package sample.kanda
 
 import android.app.Application
 import com.apollographql.apollo.ApolloClient

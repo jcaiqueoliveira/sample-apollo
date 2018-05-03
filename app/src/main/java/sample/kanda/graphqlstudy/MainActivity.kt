@@ -8,6 +8,7 @@ import com.apollographql.apollo.ApolloQueryCall
 import com.apollographql.apollo.rx2.Rx2Apollo
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import sample.kanda.SampleApplication
 
 class MainActivity : AppCompatActivity() {
     lateinit var apolloClient: ApolloClient
